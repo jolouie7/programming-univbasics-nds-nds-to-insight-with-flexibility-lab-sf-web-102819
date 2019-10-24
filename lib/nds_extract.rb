@@ -87,13 +87,13 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   
   source = pp source
-  new_arr = []
+  result = []
   puts source
-  # i = 0 
-  # while i < source.length do 
+  i = 0 
+  while i < source.length do 
     
-  #   i += 1
-  # end 
+    i += 1
+  end 
 end
 
 # ----------------    End of Your Code Region --------------------
