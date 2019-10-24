@@ -74,6 +74,20 @@ def gross_per_studio(collection)
   # total of all the worldwide_gross numbers for every movie in the input Hash
 end
 
+#helper method to get movies into AoH
+def create_movies_array(movies_array)
+  arr_of_movie_titles = []
+  i = 0
+  while i < movies_array.length do
+    hash = {}
+    movie = movies_array[i][:title]
+    hash[:title] = movie
+    arr_of_movie_titles << hash
+    i += 1
+  end
+  arr_of_movie_titles
+end
+
 def movies_with_directors_set(source)
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
