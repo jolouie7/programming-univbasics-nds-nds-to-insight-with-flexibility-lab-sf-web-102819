@@ -52,7 +52,7 @@ def movies_with_director_key(name, movies_collection)
   i = 0 
   while i < movies_collection.length do 
     hash = movies_collection[i]
-    result << movie_with_director_name(name, movies_collection)
+    result << movie_with_director_name(name, hash)
     i += 1
   end 
   result
