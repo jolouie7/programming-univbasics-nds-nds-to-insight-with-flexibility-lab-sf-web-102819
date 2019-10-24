@@ -91,6 +91,7 @@ def movies_with_directors_set(source)
   puts source
   i = 0 
   while i < source.length do 
+    outer_hash = {}
     
     i += 1
   end 
