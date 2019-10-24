@@ -107,17 +107,6 @@ def movies_with_directors_set(source)
     result_hash = {}
     name = source[i][:name] #=> "Stephen Spielberg"
     result_hash[:name] = name
-  
-    # movies = []
-    # j = 0
-    # while j < director_data[i][:movies].length do 
-    #   title = {}
-    #   movie = director_data[i][:movies][j][:title]
-    #   #<< a hash to movies arr
-    #   title[:title] = movie
-    #   movies << title #=> { :title => "movie_title" }
-    #   j += 1
-    # end
     source_movies = source[i][:movies]
     movies_arr = create_movies_array(source_movies)
     result_hash[:movies] = movies_arr
