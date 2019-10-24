@@ -101,19 +101,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   
   source = pp source
-  result = []
-  i = 0
-  while i < source.length do 
-    result_hash = {}
-    name = source[i][:name] #=> "Stephen Spielberg"
-    result_hash[:name] = name
-    source_movies = source[i][:movies]
-    movies_arr = create_movies_array(source_movies)
-    result_hash[:movies] = movies_arr
-    i += 1
-    result << result_hash
-  end 
-  result
+  source[0]
 end
 
 # ----------------    End of Your Code Region --------------------
