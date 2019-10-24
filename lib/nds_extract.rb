@@ -101,6 +101,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   
   source = pp source
+  result = []
   i = 0
   while i < source.length do 
     director_name = source[i][:name]
@@ -112,8 +113,9 @@ def movies_with_directors_set(source)
       j += 1
     end
     i += 1
+    result << arr
   end
-  [arr]
+  result
 end
 
 # ----------------    End of Your Code Region --------------------
