@@ -101,7 +101,7 @@ def movies_with_directors_set(source)
   # to have a :director_name key added to it.
   
   source = pp source
-  puts source[0][0]
+  source[0][:name]
 end
 
 # ----------------    End of Your Code Region --------------------
